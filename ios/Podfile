@@ -8,6 +8,10 @@ target 'QrCodePOS' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
   target 'QrCodePOSTests' do
     inherit! :complete
     # Pods for testing
